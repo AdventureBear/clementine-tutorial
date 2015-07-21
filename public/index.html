@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 
-<html ng-app="clemetineApp">
+<html ng-app="clementineApp">
 <head>
   <title>Clementine.js - A beginner level MEAN stack application</title>
 </head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"><script>
-<script type = "text/javascript" src="https://code.angularjs.org/1.4.3/angular-resource.min.js"></script>
-
 <body>
 
   <div class="container">
@@ -18,7 +15,7 @@
 
   <div class="container" ng-controller="clickController">
 
-    <p>You have clicked the button X times.</p>
+    <p>You have clicked the button {{ clicks }} times.</p>
     <br />
     <div class="btn-container">
       <button type="submit" class ="btn" ng-click="addClick()">CLICK ME!</button>
@@ -26,6 +23,11 @@
     </div>
 
    </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"><script>
+<script type = "text/javascript" src="https://code.angularjs.org/1.4.3/angular-resource.min.js"></script>
+<scipt type = "text/javascript" src="/controllers/clickController.client.js"></script>
+
 </body>
 
 </html>
