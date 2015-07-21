@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="clemetineApp">
 <head>
-  <title>First Node App</title>
+  <title>Clementine.js - A beginner level MEAN stack application</title>
 </head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"><script>
+<script type = "text/javascript" src="https://code.angularjs.org/1.4.3/angular-resource.min.js"></script>
 
 <body>
-  <p>Hello, world</p>
+
+  <div class="container">
+      <img src="/public/img/clementine_150.png" />
+      <br />
+      <p class="clementine-text">Clementine.js</p>
+  </div>
+
+
+  <div class="container" ng-controller="clickController">
+
+    <p>You have clicked the button X times.</p>
+    <br />
+    <div class="btn-container">
+      <button type="submit" class ="btn" ng-click="addClick()">CLICK ME!</button>
+      <button class="btn btn-delete" ng-click="resetClicks()">RESET</button>
+    </div>
+
+   </div>
 </body>
 
 </html>
