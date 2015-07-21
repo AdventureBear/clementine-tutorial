@@ -1,0 +1,15 @@
+{
+  "name": "clementine-tutorial",
+  "version": "1.0.0",
+  "description": "Beginner Tutorial for Clementine.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suzanne Atkinson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1",
+    "mongodb": "^2.0.39"
+  }
+}
